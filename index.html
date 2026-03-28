@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Vasanthan Nateshan — Senior Technical Project Manager</title>
+
+<!-- SEO -->
+<meta name="description" content="Senior Technical Project Manager with 15+ years of experience in large-scale software delivery, AI-augmented program management, and enterprise transformation." />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Vasanthan Nateshan — Senior Technical Project Manager" />
+<meta property="og:description" content="15+ years in enterprise software delivery, AI-augmented program management, SAFe® 6.0 Agilist." />
+<meta property="og:image" content="assets/headshot.jpg" />
+<meta property="og:type" content="website" />
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<style>
+
+/* -------------------- GLOBAL -------------------- */
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #FFFFFF;
+  color: #1A1A1A;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+section {
+  padding: 90px 0;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  color: #0F1014;
+}
+
+.text-gold { color: #C9A349; }
+
+/* -------------------- NAV -------------------- */
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0; left: 0;
+  background: rgba(255,255,255,0.90);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #eee;
+  z-index: 10;
+}
+
+nav .wrapper {
+  max-width: 1150px;
+  margin: auto;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+  gap: 28px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #C9A349;
+}
+
+/* -------------------- HERO -------------------- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  min-height: 100vh;
+  padding-top: 120px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
+.hero-text p {
+  max-width: 540px;
+  color: #555;
+  margin-bottom: 28px;
+  font-size: 1rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+  margin-top: 26px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.btn-primary {
+  background: #C9A349;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  opacity: 0.88;
+}
+
+.btn-outline {
+  border: 1px solid #333;
+  color: #333;
+}
+
+.btn-outline:hover {
+  background: #333;
+  color: #fff;
+}
+
+.hero-photo {
+  width: 320px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+}
+
+.hero-photo img {
+  width: 100%;
+  height: auto;
+}
+
+/* -------------------- SECTION HEADERS -------------------- */
+.section-title {
+  font-size: 2.1rem;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  color: #6D7385;
+  max-width: 620px;
+  margin-bottom: 50px;
+}
+
+/* -------------------- ABOUT -------------------- */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.about-grid p {
+  color: #444;
+}
+
+/* -------------------- SKILLS -------------------- */
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.skill-box {
+  padding: 22px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.skill-box:hover {
+  border-color: #C9A349;
+  background: #fff9e8;
+}
+
+/* -------------------- EXPERIENCE -------------------- */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.exp-item {
+  border-left: 3px solid #C9A349;
+  padding-left: 20px;
+}
+
+.exp-item h3 {
+  font-size: 1.2rem;
+}
+
+.exp-period {
+  color: #6D7385;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+
+/* -------------------- CONTACT -------------------- */
+.contact-box {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.contact-box a {
+  display: inline-block;
+  margin: 10px;
+  font-weight: 600;
+  color: #C9A349;
+  text-decoration: none;
+}
+
+/* -------------------- FOOTER -------------------- */
+footer {
+  text-align: center;
+  padding: 25px;
+  border-top: 1px solid #eee;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* -------------------- ANIMATIONS -------------------- */
+.fade-up {
+  opacity: 0;
+  transform: translateY(18px);
+  animation: fadeUp 0.7s ease forwards;
+}
+
+@keyframes fadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* -------------------- RESPONSIVE -------------------- */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .timeline {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text h1 {
+    font-size: 2.4rem;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="wrapper">
+    <div class="logo">Vasanthan N.</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero container fade-up">
+  <div class="hero-text">
+    <h1>Vasanthan <span class="text-gold">Nateshan</span></h1>
+    <p>
+      Senior Technical Project Manager with 15+ years of experience delivering
+      large-scale enterprise solutions across telecom, logistics, and digital
+      platforms. SAFe® 6.0 Agilist & AI-augmented delivery leader.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#contact" class="btn btn-primary">Get in Touch</a>
+      <a href="#experience" class="btn btn-outline">View Experience</a>
+    </div>
+  </div>
+
+  <div class="hero-photo fade-up">
+    <img src="assets/headshot.jpg" alt="Vasanthan Nateshan" />
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="container fade-up">
+  <h2 class="section-title">About Me</h2>
+  <p class="section-subtitle">
+    Passionate about leading cross-functional teams, delivering complex programs,
+    and enabling teams through agile excellence and AI-driven execution.
+  </p>
+
+  <div class="about-grid">
+    <p>
+      With over 15+ years in the software industry, I specialize in orchestrating 
+      successful end-to-end program delivery across diverse enterprise ecosystems. 
+      My leadership approach blends structured program governance with adaptive 
+      agility and AI-augmented execution.
+    </p>
+
+    <p>
+      I collaborate closely with business, engineering, design, and executive 
+      teams to convert strategy into measurable outcomes — ensuring predictable 
+      delivery, scalable execution, and continuous improvement.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="container fade-up">
+  <h2 class="section-title">Core Skills</h2>
+  <p class="section-subtitle">A blend of program leadership, agile excellence, and technical depth.</p>
+
+  <div class="skills">
+    <div class="skill-box">Agile & SAFe Delivery</div>
+    <div class="skill-box">AI-Augmented Project Management</div>
+    <div class="skill-box">Enterprise Program Governance</div>
+    <div class="skill-box">Cross-Functional Leadership</div>
+    <div class="skill-box">Platform & API Programs</div>
+    <div class="skill-box">Risk, Compliance & Reporting</div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="container fade-up">
+  <h2 class="section-title">Experience</h2>
+  <p class="section-subtitle">Career progression across enterprise, telecom, and digital platforms.</p>
+
+  <div class="timeline">
+    <div class="exp-item">
+      <div class="exp-period">2019 — Present</div>
+      <h3>Senior Technical Project Manager</h3>
+      <p>Driving end-to-end software delivery, agile execution, and enterprise platform programs.</p>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-period">2015 — 2019</div>
+      <h3>Technical Project Manager</h3>
+      <p>Led multi-team execution across API modernization, platforms, and B2C applications.</p>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-period">2008 — 2015</div>
+      <h3>Software Engineer → Senior Engineer</h3>
+      <p>Core engineering contributions in telecom and digital transformation initiatives.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-box fade-up">
+    <h2 class="section-title">Get in Touch</h2>
+    <p class="section-subtitle">Let’s connect for opportunities, collaboration, or discussions.</p>
+
+    <a href="mailto:vasanthzoho@gmail.com">📧 Email</a>
+    <a href="https://www.linkedin.com/" target="_blank">🔗 LinkedIn</a>
+    <a href="tel:+91XXXXXXXXXX">📞 Call</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2024 Vasanthan N. All rights reserved.
+</footer>
+
+</body>
+</html>
