@@ -6,47 +6,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vasanthan Portfolio</title>
 
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Main styling -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+
+    <style>
+      /* ⭐ FIX #1 — ensure text is visible */
+      body {
+        color: #ffffff !important;
+      }
+
+      /* ⭐ FIX #2 — proper centered width */
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    </style>
   </head>
 
   <body>
+    <!-- ⭐ FIX #3 — ALL CONTENT MUST BE INSIDE THIS CONTAINER -->
     <div class="container">
-      <header>
-        <nav aria-label="Main Navigation">
-          <!-- your navigation + logo -->
+
+      <!-- ⭐ YOUR ORIGINAL CONTENT STARTS HERE ⭐ -->
+
+      <header class="header">
+        <nav class="navbar">
+          <h2 class="logo">Vasanth</h2>
+          <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#metrics">Metrics</a></li>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+          </ul>
         </nav>
       </header>
 
-      <main>
-        <section id="hero">
-          <!-- your hero left + image right -->
-        </section>
+      <!-- HERO SECTION -->
+      <section id="hero" class="hero-section">
+        <div class="hero-content">
+          <h1>Hi, I'm <span class="highlight">Vasanthan</span></h1>
+          <p>
+            Senior Technical Project Manager with deep delivery and leadership experience.
+          </p>
+        </div>
+        <div class="hero-image">
+          <img src="assets/headshot.jpg" alt="Profile" />
+        </div>
+      </section>
 
-        <section id="skills">
-          <!-- skills -->
-        </section>
+      <!-- METRICS -->
+      <section id="metrics" class="metrics-section">
+        <div class="metric">
+          <h2>15+</h2>
+          <p>Years Experience</p>
+        </div>
+        <div class="metric">
+          <h2>20+</h2>
+          <p>Programs Delivered</p>
+        </div>
+        <div class="metric">
+          <h2>50+</h2>
+          <p>Cross-team Integrations</p>
+        </div>
+      </section>
 
-        <section id="programs">
-          <!-- programs -->
-        </section>
+      <!-- ABOUT ME -->
+      <section id="aboutme" class="about-section">
+        <h2>About Me</h2>
+        <p>
+          Experienced Technical Project Manager with strong delivery background in telecom,
+          logistics, and digital platforms.
+        </p>
+      </section>
 
-        <section id="projects">
-          <!-- project list -->
-        </section>
+      <!-- SKILLS -->
+      <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <div class="skill-list">
+          <div class="skill-item">Agile Delivery</div>
+          <div class="skill-item">Scrum & SAFe</div>
+          <div class="skill-item">Platform Engineering</div>
+          <div class="skill-item">AI-assisted PM</div>
+          <div class="skill-item">API Delivery</div>
+          <div class="skill-item">Cross-Functional Leadership</div>
+        </div>
+      </section>
 
-        <section id="experience">
-          <!-- timeline -->
-        </section>
-      </main>
+      <!-- PROGRAMS -->
+      <section id="programs" class="programs-section">
+        <h2>Programs Delivered</h2>
+        <ul class="program-list">
+          <li>Enterprise API Modernization</li>
+          <li>Logistics Platform Transformation</li>
+          <li>BFSI Automation Platform</li>
+        </ul>
+      </section>
 
-      <footer>
-        <!-- footer -->
+      <!-- PROJECTS -->
+      <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <div class="project-card">Project A</div>
+          <div class="project-card">Project B</div>
+          <div class="project-card">Project C</div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="experience-section">
+        <h2>Experience</h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>Senior Technical Project Manager</h3>
+            <p>2019 – Present</p>
+          </div>
+
+          <div class="timeline-item">
+            <h3>Technical Project Manager</h3>
+            <p>2015 – 2019</p>
+          </div>
+
+          <div class="timeline-item">
+            <h3>Software Engineer</h3>
+            <p>2008 – 2015</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <p>© 2024 Vasanthan. All Rights Reserved.</p>
       </footer>
-    </div>
+
+      <!-- ⭐ END OF YOUR ORIGINAL CONTENT ⭐ -->
+
+    </div> <!-- END .container -->
   </body>
 </html>
